@@ -126,9 +126,9 @@ After setting up the environment, you can test the setup with QEMU by sourcing t
 ## Bitbake_Tutorial
 
 🎥 To learn more about using `bitbake` and setting up YOCTO, refer to the official BitBake tutorial:  
-[BitBake Guide](https://drive.google.com/file/d/1dvASqV8TAXeK-px1aI9IAFVDup4PDdRK/view?usp=sharing)
+[BitBake Guide](https://a4z.gitlab.io/docs/BitBake/guide.html)
 
 ## Video
 
 ✍️ You can watch my video covers building and testing a YOCTO image here:  
-[MyVideo](https://a4z.gitlab.io/docs/BitBake/guide.html)
+[MyVideo](https://drive.google.com/file/d/1dvASqV8TAXeK-px1aI9IAFVDup4PDdRK/view?usp=drive_link)
