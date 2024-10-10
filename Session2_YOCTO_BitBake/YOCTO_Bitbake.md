@@ -1,4 +1,4 @@
-# Pre-development Stage for YOCTO
+# Introduction To YOCTO
 
 🔧 This guide covers the pre-development stage of setting up a YOCTO build environment, including preparing the host machine, choosing the appropriate YOCTO release, testing the environment using QEMU, and building a minimal image.
 
@@ -12,8 +12,8 @@
   - 🧪 [Test Environment with QEMU](#test-environment-with-qemu)
   - 🖼️ [Build Minimal Image](#build-minimal-image)
 - 📋 [Notes](#notes)
-- 🎥 [References](#references)
-- ✍️ [Video](#video)
+- 🎥 [Bitbake_Tutorial](#Bitbake_Tutorial)
+- ✍️ [Video](#Video)
 
 ## Overview
 
@@ -89,14 +89,14 @@ After setting up the environment, you can test the setup with QEMU by sourcing t
    ```
 
 3. **Set the machine type**  
-   Modify the `MACHINE` variable to specify the target architecture (e.g., `qemuarm64`).
+   Modify the `MACHINE` variable to specify the target architecture (e.g., `qemuarm`).
 
    ```bash
-   MACHINE ??="qemuarm64"
+   MACHINE ??="qemuarm"
    ```
 
 4. **Set the number of threads**  
-   Adjust the number of threads to optimize the build process according to your machine's specifications. The number should typically be half the number of CPU cores on your machine.
+   Adjust the number of threads to optimize the build process according to your machine's specifications. The number should typically be half the number of CPU cores on your machine(use lscpu command to know number of your cores).
 
    ```bash
    BB_NUMBER_THREADS="6"
@@ -116,19 +116,19 @@ After setting up the environment, you can test the setup with QEMU by sourcing t
    After building the image, use `runqemu` to launch QEMU with the specified machine configuration:
 
    ```bash
-   runqemu <MACHINE>  # e.g., runqemu qemuarm64 nographic
+   runqemu <MACHINE> <option>  # e.g., runqemu qemuarm nographic
    ```
 
 ## Notes
 
-📋 Once your setup is complete, you should have a minimal YOCTO system ready to run on QEMU with the selected machine type (`qemuarm64` in this case). The `bitbake` tool is used to build the core image, and the `runqemu` command launches the QEMU virtual machine with the specified settings.
+📋 Once your setup is complete, you should have a minimal YOCTO system ready to run on QEMU with the selected machine type (`qemuarm` in this case). The `bitbake` tool is used to build the core image, and the `runqemu` command launches the QEMU virtual machine with the specified settings.
 
-## References
+## Bitbake_Tutorial
 
 🎥 To learn more about using `bitbake` and setting up YOCTO, refer to the official BitBake tutorial:  
 [BitBake Guide](https://a4z.gitlab.io/docs/BitBake/guide.html)
 
 ## Video
 
-✍️ You can watch a video tutorial that covers building and testing a YOCTO image here:  
-[BitBake & YOCTO Tutorial](https://a4z.gitlab.io/docs/BitBake/guide.html)
+✍️ You can watch my video covers building and testing a YOCTO image here:  
+[MyVideo](https://a4z.gitlab.io/docs/BitBake/guide.html)
