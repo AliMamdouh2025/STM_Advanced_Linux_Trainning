@@ -98,6 +98,9 @@ The server will listen on port 8080 and handle incoming HTTP requests.
 - **`main` function**: Initializes the server, accepts connections, and forks processes.
 - **`handle_client` function**: Reads and processes HTTP requests.
 - **Helper functions**:
+
+## Video Explanation Link
+https://drive.google.com/file/d/1ydT4A1YbyPBVvak8-qvoKiJ-Q4F6dg5A/view?usp=sharing
   - `send_response`: Constructs and sends HTTP responses.
   - `send_directory_listing`: Generates HTML for directory contents.
   - `send_file_contents`: Reads and sends file content.
