@@ -1,8 +1,6 @@
 # WiresharkLimited
 
-# WireFish Packet Sniffer
-
-WireFish is a lightweight, extensible packet sniffer implemented in C using libpcap. It provides functionality similar to Wireshark/TCPDump with support for multiple network protocols and packet filtering capabilities.
+WiresharkLimited is a lightweight, extensible packet sniffer implemented in C using libpcap. It provides functionality similar to Wireshark/TCPDump with support for multiple network protocols and packet filtering capabilities.
 
 ## Features
 
@@ -52,7 +50,7 @@ gcc -o wireSharkLimited wireSharkLimited.c -lpcap
 
 ## Usage
 
-WireFish requires root privileges to capture packets. Basic usage:
+WiresharkLimited requires root privileges to capture packets. Basic usage:
 
 ```bash
 sudo ./wireSharkLimited [options]
@@ -124,7 +122,7 @@ The sniffer provides detailed information for each captured packet:
 
 ## Object-Oriented Design
 
-WireFish implements OOP concepts in C through:
+WiresharkLimited implements OOP concepts in C through:
 
 1. **Inheritance**: Base `Packet` structure inherited by specific packet types
 2. **Polymorphism**: Function pointers for packet parsing and saving
