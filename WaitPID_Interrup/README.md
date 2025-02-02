@@ -1,5 +1,4 @@
-**Child Process Signal Handling Demonstration**  
-**A Robust Example of SIGCHLD Handling and Zombie Prevention**
+# Wait PID Asynch Function
 
 ---
 
@@ -70,15 +69,8 @@ Parent exiting
    Child receives `SIGTERM` (signal 15) from parent after 3 seconds.
 
 3. **Forced Termination**  
-   Child receives `SIGKILL` (signal 9) after 4 seconds, demonstrating unhandled kills.
+   Child receives `SIGKILL` (signal 9) after 4 seconds.
 
----
 
-### **Technical Highlights**
-- **Signal Safety**: Blocks all signals during handler execution using `sigfillset()`
-- **Portable Design**: Uses POSIX-standard `strsignal()` for signal descriptions
-- **Race Condition Prevention**: Implements `SA_RESTART` to protect interrupted syscalls
-- **Resource Cleanup**: Guarantees child process reaping through `WNOHANG` looping
-
----
+### *** Video Link *** 
 
