@@ -1,0 +1,3 @@
+shirt 10 19.99
+pants 15 29.99
+jacket 5 49.99
