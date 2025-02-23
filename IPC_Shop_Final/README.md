@@ -8,7 +8,7 @@
 This project is a multi-process C++ application simulating a clothing shop, designed to demonstrate efficient inter-process communication (IPC) using POSIX message queues. It consists of three distinct processes—Shop, Customer, and Inventory Manager—that work together to manage inventory, process customer orders, and handle restocking and price updates. The implementation prioritizes high performance, maintainability, and modularity, leveraging modern C++ features and robust error handling.
 
 ## System Design
-![image](https://github.com/user-attachments/assets/1380c76e-bd00-4876-91af-3591e15df92d)
+![image](https://github.com/user-attachments/assets/adae7946-51ab-448f-9aba-35da241118c7)
 
 ### Key Features
 - **Shop Process**: Loads initial inventory from a file, manages stock, processes requests, and periodically prints inventory every 10 seconds.
